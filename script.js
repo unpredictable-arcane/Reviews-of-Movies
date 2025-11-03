@@ -1,12 +1,12 @@
 const API_URL =
   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=d89ccbf0ff6898587add0a0cb4d1f2be&page=1";
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
-const SEARCH_URL =
-  'https://api.themoviedb.org/3/seach/movie?api_key=d89ccbf0ff6898587add0a0cb4d1f2be&query="';
+const SEARCH_API =
+  'https://api.themoviedb.org/3/search/movie?api_key=d89ccbf0ff6898587add0a0cb4d1f2be&query="';
 
-const form = document.getElementById("form");
-const main = document.getElementById("main");
-const search = document.getElementById("search");
+const form = document.getElementById('form');
+const main = document.getElementById('main');
+const search = document.getElementById('search');
 
 //Get initial movies
 getMovies(API_URL);
